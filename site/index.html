@@ -1,0 +1,145 @@
+<!doctype html>
+<!-- SPDX-License-Identifier: BSD-2-Clause -->
+<!-- Copyright (c) 2026 Authors of shirudo -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>shirudo: a BPF-based security platform</title>
+<meta name="description" content="shirudo is a BPF-based security platform: Linux targets run only the BPF their operator signed, every change is measured into the TPM, and functionality ships as signed upatches that targets pull from OCI registries.">
+<link rel="canonical" href="https://shirudo.dev/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="/">
+    <picture>
+      <source srcset="logos/shirudo-horizontal-for-dark-back.svg" media="(prefers-color-scheme: dark)">
+      <img src="logos/shirudo-horizontal-for-light-back.svg" alt="shirudo" width="184" height="40">
+    </picture>
+  </a>
+  <nav>
+    <a href="https://docs.shirudo.dev/">Documentation</a>
+    <a href="https://github.com/shirudo-dev/shirudo">GitHub</a>
+  </nav>
+</header>
+
+<main>
+  <p class="etymology">shirudo (Japanese シールド, pronounced “shee-roo-doh”) means “shield”.</p>
+
+  <p class="lead">shirudo is a BPF-based security platform: Linux targets
+  run only the BPF their operator signed, every change is measured into the
+  TPM, and functionality ships as signed
+  <a href="https://docs.shirudo.dev/upatches/learn/concepts.html">upatches</a>
+  (“micropatches”) that targets pull from OCI registries.</p>
+
+  <p class="actions">
+    <a class="button" href="https://docs.shirudo.dev/">Read the documentation</a>
+    <a class="button quiet" href="https://docs.shirudo.dev/start/quickstart.html">Quickstart</a>
+  </p>
+
+  <section aria-labelledby="use-cases">
+    <h2 id="use-cases">Use cases</h2>
+    <p>Users, developers and agents write upatches on top of shirudo, and
+    shirudo makes sure that only signed upatches run and that every change
+    is on record.</p>
+    <ul class="cases">
+      <li><strong>Live patching for kernel and userspace.</strong> Security
+      mitigations that block vulnerable code paths. They complement
+      traditional kernel live patching with a faster rollout and bridge
+      kernel and userspace deployment cycles.</li>
+      <li><strong>System hardening.</strong> Sandboxes for containers,
+      Kubernetes Pods and LLM agents, and kernel hardening implemented as
+      upatches.</li>
+      <li><strong>Runtime security and observability.</strong> For kernel and
+      userspace applications, LLM agents included. Data is collected and
+      aggregated in BPF maps and pushed over OpenTelemetry into
+      collectors.</li>
+      <li><strong>Embedded and edge devices.</strong> Devices that are hard to
+      patch get upatches the same way servers do. shirudo runs on x86-64,
+      arm64 and riscv64 and adds little to the trusted computing base beyond
+      the kernel.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="how-it-works">
+    <h2 id="how-it-works">How it works</h2>
+    <figure>
+      <a href="https://docs.shirudo.dev/start/how-it-works.html">
+        <img src="how-it-works.svg" width="760" height="380"
+             alt="The operator host builds, signs and pushes to an OCI registry. The target pulls, its kernel checks the signature and runs the loader, its TPM extends the register and signs evidence, which the operator verifies.">
+      </a>
+      <figcaption>The life of a upatch. Only the operator host holds the
+      signing key, and only the target's TPM signs evidence.
+      <a href="https://docs.shirudo.dev/start/how-it-works.html">How it works</a>
+      follows one upatch through each numbered step.</figcaption>
+    </figure>
+  </section>
+
+  <section class="index" aria-label="Documentation and project links">
+    <div>
+      <h2>Start</h2>
+      <ul>
+        <li><a href="https://docs.shirudo.dev/start/quickstart.html">Quickstart</a></li>
+        <li><a href="https://docs.shirudo.dev/start/how-it-works.html">How it works</a></li>
+        <li><a href="https://docs.shirudo.dev/start/install.html">Install</a></li>
+        <li><a href="https://docs.shirudo.dev/start/faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Write upatches</h2>
+      <ul>
+        <li><a href="https://docs.shirudo.dev/start/guides/first-upatch.html">Your first upatch</a></li>
+        <li><a href="https://docs.shirudo.dev/upatches/learn/kernel-fix-tutorial.html">From a kernel fix to a upatch</a></li>
+        <li><a href="https://docs.shirudo.dev/upatches/index.html">All about upatches</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Operate</h2>
+      <ul>
+        <li><a href="https://docs.shirudo.dev/operate/deploy/deployment-checklist.html">Deployment checklist</a></li>
+        <li><a href="https://docs.shirudo.dev/operate/run/read-status.html">Read shirudo status</a></li>
+        <li><a href="https://docs.shirudo.dev/operate/maintain/upgrade.html">Upgrade shirudo and the kernel</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Security</h2>
+      <ul>
+        <li><a href="https://docs.shirudo.dev/security/security-model.html">Security model</a></li>
+        <li><a href="https://docs.shirudo.dev/security/threat-model.html">Threat model</a></li>
+        <li><a href="https://docs.shirudo.dev/security/reporting.html">Report a vulnerability</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Specifications</h2>
+      <ul>
+        <li><a href="https://docs.shirudo.dev/reference/formats/beefile.html">Beefile</a></li>
+        <li><a href="https://docs.shirudo.dev/reference/formats/upatch-format.html">.upatch format</a></li>
+        <li><a href="https://docs.shirudo.dev/reference/formats/upatch-tree.html">upatch tree</a></li>
+        <li><a href="https://docs.shirudo.dev/reference/formats/keepalive.html">Keepalive</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Project</h2>
+      <ul>
+        <li><a href="https://github.com/shirudo-dev/shirudo">Source</a></li>
+        <li><a href="https://github.com/shirudo-dev/shirudo/blob/main/CONTRIBUTING.md">Contributing</a></li>
+        <li><a href="https://github.com/shirudo-dev/shirudo/blob/main/GOVERNANCE.md">Governance</a></li>
+        <li><a href="https://github.com/shirudo-dev/shirudo/blob/main/MAINTAINERS.md">Maintainers</a></li>
+        <li><a href="https://github.com/shirudo-dev/shirudo/blob/main/CODE_OF_CONDUCT.md">Code of conduct</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 Authors of shirudo ·
+  <a href="https://github.com/shirudo-dev/shirudo/blob/main/LICENSE">BSD-2-Clause</a> ·
+  <a href="https://github.com/shirudo-dev/shirudo.dev">Source of this page</a>
+</footer>
+
+</body>
+</html>

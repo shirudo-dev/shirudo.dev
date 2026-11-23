@@ -1,0 +1,60 @@
+name: Pages
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  # The page links into docs.shirudo.dev, which changes without a push here.
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    # A newer run for the same pull request supersedes this one. On main a
+    # run in flight finishes, so a busy main still deploys.
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+      cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Check the files and links of the page
+        run: .github/scripts/check-links.sh site
+
+      - name: Upload the site for GitHub Pages
+        if: github.ref == 'refs/heads/main' && github.event_name != 'schedule'
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: site/
+
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'schedule'
+    needs: check
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    # A deployment cancelled midway publishes nothing, so a push to main
+    # waits for the one in flight and only the newest waiting one runs.
+    concurrency:
+      group: ${{ github.workflow }}-pages
+      cancel-in-progress: false
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

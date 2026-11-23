@@ -1,0 +1,639 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='760.0' height='380.0' viewBox='-72 -72 569.996 284.998' class='fig fig-f-ink' role='img'><!-- Documentation/figures/start-how-it-works.tex, sha256 fa582cda089dad5b5417618bfa11e17fb713c94302c5174bae93f691f7d3fbcf --><style>.fig-f-ink{fill:var(--fig-ink,#171b22)}.fig-s-ink{stroke:var(--fig-ink,#171b22)}.fig-f-muted{fill:var(--fig-muted,#5d6675)}.fig-s-muted{stroke:var(--fig-muted,#5d6675)}.fig-f-line{fill:var(--fig-line,#8a93a0)}.fig-s-line{stroke:var(--fig-line,#8a93a0)}.fig-f-grid{fill:var(--fig-grid,#e2e6eb)}.fig-s-grid{stroke:var(--fig-grid,#e2e6eb)}.fig-f-axis{fill:var(--fig-axis,#c3c9d1)}.fig-s-axis{stroke:var(--fig-axis,#c3c9d1)}.fig-f-accent{fill:var(--fig-accent,#8b1e3f)}.fig-s-accent{stroke:var(--fig-accent,#8b1e3f)}.fig-f-s1{fill:var(--fig-s1,#2a78d6)}.fig-s-s1{stroke:var(--fig-s1,#2a78d6)}.fig-f-s2{fill:var(--fig-s2,#eb6834)}.fig-s-s2{stroke:var(--fig-s2,#eb6834)}.fig-f-s3{fill:var(--fig-s3,#1baf7a)}.fig-s-s3{stroke:var(--fig-s3,#1baf7a)}.fig-f-s4{fill:var(--fig-s4,#eda100)}.fig-s-s4{stroke:var(--fig-s4,#eda100)}.fig-f-free{fill:var(--fig-free,#dde2e8)}.fig-s-free{stroke:var(--fig-free,#dde2e8)}.fig-f-on{fill:var(--fig-on,#ffffff)}.fig-s-on{stroke:var(--fig-on,#ffffff)}@media (prefers-color-scheme:dark){.fig-f-ink{fill:var(--fig-ink,#e4e8ee)}.fig-s-ink{stroke:var(--fig-ink,#e4e8ee)}.fig-f-muted{fill:var(--fig-muted,#9ba5b3)}.fig-s-muted{stroke:var(--fig-muted,#9ba5b3)}.fig-f-line{fill:var(--fig-line,#8a93a0)}.fig-s-line{stroke:var(--fig-line,#8a93a0)}.fig-f-grid{fill:var(--fig-grid,#262d37)}.fig-s-grid{stroke:var(--fig-grid,#262d37)}.fig-f-axis{fill:var(--fig-axis,#39414c)}.fig-s-axis{stroke:var(--fig-axis,#39414c)}.fig-f-accent{fill:var(--fig-accent,#e8899f)}.fig-s-accent{stroke:var(--fig-accent,#e8899f)}.fig-f-s1{fill:var(--fig-s1,#3987e5)}.fig-s-s1{stroke:var(--fig-s1,#3987e5)}.fig-f-s2{fill:var(--fig-s2,#d95926)}.fig-s-s2{stroke:var(--fig-s2,#d95926)}.fig-f-s3{fill:var(--fig-s3,#199e70)}.fig-s-s3{stroke:var(--fig-s3,#199e70)}.fig-f-s4{fill:var(--fig-s4,#c98500)}.fig-s-s4{stroke:var(--fig-s4,#c98500)}.fig-f-free{fill:var(--fig-free,#2f3640)}.fig-s-free{stroke:var(--fig-free,#2f3640)}.fig-f-on{fill:var(--fig-on,#ffffff)}.fig-s-on{stroke:var(--fig-on,#ffffff)}}</style>
+<defs>
+<path id='start-how-it-works-g1-39' d='M1.299-6.912C.912-6.912 .737-6.69 .737-6.368V-6.239C.737-5.99 .848-5.806 1.097-5.75C.995-5.317 .774-4.995 .405-4.608H1.023C1.548-5.059 1.862-5.741 1.862-6.239V-6.368C1.862-6.69 1.686-6.912 1.299-6.912Z'/>
+<path id='start-how-it-works-g1-40' d='M.765-2.875C.765-1.078 1.521 .488 2.433 1.263H3.133C2.138 .378 1.456-1.18 1.456-2.47V-3.262C1.456-4.552 2.11-6.082 3.133-7.004H2.433C1.493-6.202 .765-4.654 .765-2.875Z'/>
+<path id='start-how-it-works-g1-41' d='M2.322-2.875C2.322-4.654 1.594-6.202 .654-7.004H-.046C.977-6.082 1.631-4.552 1.631-3.262V-2.47C1.631-1.18 .949 .378-.046 1.263H.654C1.567 .488 2.322-1.078 2.322-2.875Z'/>
+<path id='start-how-it-works-g1-44' d='M1.253-1.078C.866-1.078 .691-.857 .691-.534V-.405C.691-.157 .802 .028 1.051 .083C.949 .516 .728 .839 .359 1.226H.977C1.502 .774 1.815 .092 1.815-.405V-.534C1.815-.857 1.64-1.078 1.253-1.078Z'/>
+<path id='start-how-it-works-g1-45' d='M3.041-2.405V-3.198H.636V-2.405H3.041Z'/>
+<path id='start-how-it-works-g1-46' d='M1.253 .111C1.64 .111 1.815-.111 1.815-.424V-.544C1.815-.857 1.64-1.078 1.253-1.078S.691-.857 .691-.544V-.424C.691-.111 .866 .111 1.253 .111Z'/>
+<path id='start-how-it-works-g1-49' d='M5.041 0V-.682H3.382V-6.432H2.175L.47-4.838L.922-4.35L2.543-5.861H2.608V-.682H.811V0H5.041Z'/>
+<path id='start-how-it-works-g1-50' d='M4.912-.682H1.53L3.262-2.239C4.082-2.977 4.672-3.677 4.672-4.672C4.672-5.769 3.953-6.543 2.7-6.543C1.456-6.543 .885-5.787 .636-5.032L1.327-4.764C1.502-5.373 1.871-5.852 2.663-5.852S3.852-5.363 3.852-4.654V-4.543C3.852-3.926 3.391-3.281 2.792-2.728L.691-.793V0H4.912V-.682Z'/>
+<path id='start-how-it-works-g1-51' d='M1.705-3.705V-3.032H2.461C3.364-3.032 3.843-2.599 3.843-1.843V-1.769C3.843-1.014 3.364-.581 2.461-.581C1.677-.581 1.299-.922 .968-1.428L.387-.986C.783-.433 1.355 .111 2.47 .111C3.778 .111 4.654-.654 4.654-1.76C4.654-2.728 3.99-3.244 3.299-3.382V-3.419C3.981-3.594 4.534-4.092 4.534-4.921C4.534-5.962 3.668-6.543 2.58-6.543C1.548-6.543 .986-6.008 .664-5.492L1.235-5.05C1.502-5.538 1.898-5.852 2.562-5.852C3.244-5.852 3.714-5.511 3.714-4.838V-4.774C3.714-4.156 3.271-3.705 2.405-3.705H1.705Z'/>
+<path id='start-how-it-works-g1-52' d='M4.193 0V-1.263H5.124V-1.908H4.193V-6.432H3.041L.35-1.944V-1.263H3.456V0H4.193ZM3.41-5.833H3.456V-1.908H1.078L3.41-5.833Z'/>
+<path id='start-how-it-works-g1-53' d='M4.589-6.432H1.143L.912-2.894L1.567-2.801C1.834-3.096 2.129-3.345 2.719-3.345C3.594-3.345 4.064-2.857 4.064-2.009V-1.917C4.064-1.069 3.594-.581 2.719-.581C1.944-.581 1.622-.922 1.29-1.428L.71-.986C1.097-.433 1.65 .111 2.719 .111C4.073 .111 4.884-.765 4.884-2.018C4.884-3.262 4.073-4.009 2.967-4.009C2.295-4.009 1.954-3.732 1.65-3.299H1.585L1.769-5.75H4.589V-6.432Z'/>
+<path id='start-how-it-works-g1-54' d='M2.774 .111C4.064 .111 4.912-.756 4.912-2.018C4.912-3.235 4.119-4 3.013-4C2.23-4 1.769-3.603 1.465-3.078L1.419-3.096C1.769-4.589 2.534-5.428 3.907-6.432H2.912C1.88-5.76 .617-4.267 .617-2.359C.617-.829 1.438 .111 2.774 .111ZM2.765-.562C1.917-.562 1.419-1.051 1.419-1.917V-1.991C1.419-2.857 1.917-3.345 2.765-3.345S4.11-2.857 4.11-1.991V-1.917C4.11-1.051 3.612-.562 2.765-.562Z'/>
+<path id='start-how-it-works-g1-55' d='M2.442 0L4.857-5.75V-6.432H.636V-4.571H1.327V-5.769H4.073L1.613 0H2.442Z'/>
+<path id='start-how-it-works-g1-67' d='M3.124 .111C4.193 .111 4.976-.452 5.382-1.355L4.764-1.742C4.506-1.041 3.944-.581 3.124-.581C2.018-.581 1.364-1.382 1.364-2.7V-3.659C1.364-4.976 2.018-5.852 3.124-5.852C3.917-5.852 4.451-5.419 4.709-4.755L5.336-5.133C4.93-6.027 4.193-6.543 3.124-6.543C1.502-6.543 .534-5.327 .534-3.179S1.502 .111 3.124 .111Z'/>
+<path id='start-how-it-works-g1-73' d='M3.133 0V-.645H2.23V-5.787H3.133V-6.432H.553V-5.787H1.456V-.645H.553V0H3.133Z'/>
+<path id='start-how-it-works-g1-75' d='M4.681 0H5.64L3.078-3.677L5.474-6.432H4.525L2.58-4.129L1.659-3.013H1.631V-6.432H.857V0H1.631V-2.147L2.543-3.161L4.681 0Z'/>
+<path id='start-how-it-works-g1-76' d='M4.368 0V-.682H1.631V-6.432H.857V0H4.368Z'/>
+<path id='start-how-it-works-g1-77' d='M.857 0H1.613V-5.419H1.659L2.202-4.34L3.741-1.539L5.28-4.34L5.824-5.419H5.87V0H6.626V-6.432H5.631L3.778-2.967H3.732L1.889-6.432H.857V0Z'/>
+<path id='start-how-it-works-g1-79' d='M3.262 .111C4.921 .111 5.99-1.06 5.99-3.216S4.921-6.543 3.262-6.543S.534-5.373 .534-3.216S1.603 .111 3.262 .111ZM3.262-.581C2.147-.581 1.364-1.41 1.364-2.682V-3.751C1.364-5.022 2.147-5.852 3.262-5.852S5.161-5.022 5.161-3.751V-2.682C5.161-1.41 4.377-.581 3.262-.581Z'/>
+<path id='start-how-it-works-g1-80' d='M1.631 0V-2.746H3.419C4.571-2.746 5.216-3.456 5.216-4.589S4.571-6.432 3.419-6.432H.857V0H1.631ZM1.631-5.75H3.419C4.027-5.75 4.387-5.419 4.387-4.829V-4.35C4.387-3.76 4.027-3.428 3.419-3.428H1.631V-5.75Z'/>
+<path id='start-how-it-works-g1-83' d='M2.663 .111C4.046 .111 4.875-.645 4.875-1.825C4.875-2.783 4.331-3.336 3.078-3.622L2.553-3.741C1.742-3.926 1.345-4.202 1.345-4.81C1.345-5.502 1.852-5.861 2.672-5.861C3.419-5.861 3.907-5.557 4.258-5.068L4.838-5.492C4.359-6.174 3.677-6.543 2.709-6.543C1.447-6.543 .581-5.926 .581-4.783C.581-3.797 1.226-3.281 2.396-3.013L2.921-2.894C3.769-2.7 4.11-2.396 4.11-1.788C4.11-1.051 3.612-.571 2.691-.571C1.944-.571 1.41-.894 .958-1.493L.387-1.014C.903-.313 1.631 .111 2.663 .111Z'/>
+<path id='start-how-it-works-g1-84' d='M5.068-5.75V-6.432H.203V-5.75H2.249V0H3.023V-5.75H5.068Z'/>
+<path id='start-how-it-works-g1-97' d='M4.654 0V-.645H4.11V-3.262C4.11-4.267 3.428-4.866 2.285-4.866C1.428-4.866 .857-4.442 .599-3.935L1.041-3.52C1.299-3.953 1.677-4.23 2.249-4.23C3.004-4.23 3.373-3.861 3.373-3.189V-2.719H2.433C1.051-2.719 .405-2.221 .405-1.327C.405-.442 .995 .111 2 .111C2.663 .111 3.17-.194 3.373-.774H3.419C3.474-.332 3.695 0 4.239 0H4.654ZM2.12-.516C1.548-.516 1.18-.783 1.18-1.253V-1.447C1.18-1.908 1.557-2.166 2.396-2.166H3.373V-1.382C3.373-.894 2.848-.516 2.12-.516Z'/>
+<path id='start-how-it-works-g1-98' d='M.783 0H1.521V-.774H1.557C1.843-.184 2.295 .111 2.949 .111C4.138 .111 4.884-.857 4.884-2.378S4.138-4.866 2.949-4.866C2.295-4.866 1.806-4.58 1.557-3.981H1.521V-6.819H.783V0ZM2.746-.553C2.073-.553 1.521-.903 1.521-1.521V-3.29C1.521-3.815 2.073-4.202 2.746-4.202C3.576-4.202 4.092-3.631 4.092-2.783V-1.972C4.092-1.124 3.576-.553 2.746-.553Z'/>
+<path id='start-how-it-works-g1-99' d='M2.553 .111C3.456 .111 4.073-.332 4.377-1.014L3.843-1.373C3.585-.829 3.152-.544 2.553-.544C1.677-.544 1.226-1.143 1.226-1.972V-2.783C1.226-3.612 1.677-4.211 2.553-4.211C3.133-4.211 3.539-3.926 3.714-3.437L4.331-3.751C4.055-4.405 3.493-4.866 2.553-4.866C1.216-4.866 .433-3.898 .433-2.378S1.216 .111 2.553 .111Z'/>
+<path id='start-how-it-works-g1-100' d='M3.824 0H4.562V-6.819H3.824V-3.981H3.788C3.539-4.58 3.05-4.866 2.396-4.866C1.207-4.866 .461-3.898 .461-2.378S1.207 .111 2.396 .111C3.05 .111 3.502-.184 3.788-.774H3.824V0ZM2.599-.553C1.769-.553 1.253-1.124 1.253-1.972V-2.783C1.253-3.631 1.769-4.202 2.599-4.202C3.271-4.202 3.824-3.815 3.824-3.29V-1.521C3.824-.903 3.271-.553 2.599-.553Z'/>
+<path id='start-how-it-works-g1-101' d='M2.571 .111C3.465 .111 4.147-.332 4.451-.977L3.926-1.355C3.677-.829 3.216-.534 2.617-.534C1.733-.534 1.207-1.152 1.207-1.972V-2.193H4.626V-2.543C4.626-3.889 3.843-4.866 2.571-4.866C1.281-4.866 .433-3.889 .433-2.378S1.281 .111 2.571 .111ZM2.571-4.248C3.327-4.248 3.834-3.686 3.834-2.848V-2.746H1.207V-2.811C1.207-3.64 1.769-4.248 2.571-4.248Z'/>
+<path id='start-how-it-works-g1-102' d='M1.041 0H1.779V-4.11H2.801V-4.755H1.779V-6.174H2.801V-6.819H2.083C1.382-6.819 1.041-6.368 1.041-5.714V-4.755H.267V-4.11H1.041V0Z'/>
+<path id='start-how-it-works-g1-103' d='M4.792 .525C4.792-.258 4.285-.737 3.106-.737H2.092C1.659-.737 1.364-.811 1.364-1.097C1.364-1.392 1.677-1.548 1.991-1.631C2.129-1.603 2.295-1.585 2.451-1.585C3.539-1.585 4.248-2.258 4.248-3.225C4.248-3.732 4.046-4.156 3.705-4.451V-4.755H4.608V-5.4H3.898C3.502-5.4 3.345-5.133 3.345-4.764V-4.681C3.087-4.801 2.783-4.866 2.442-4.866C1.364-4.866 .654-4.193 .654-3.225C.654-2.562 .986-2.037 1.548-1.769V-1.733C1.069-1.613 .728-1.382 .728-.903C.728-.581 .885-.369 1.152-.24V-.138C.682-.009 .396 .267 .396 .783C.396 1.53 1.004 1.954 2.488 1.954C4.018 1.954 4.792 1.502 4.792 .525ZM4.101 .581C4.101 1.097 3.622 1.355 2.801 1.355H2.12C1.373 1.355 1.087 1.014 1.087 .599C1.087 .304 1.226 .092 1.53-.046H3.115C3.852-.046 4.101 .203 4.101 .581ZM2.451-2.175C1.825-2.175 1.428-2.47 1.428-3.096V-3.354C1.428-3.981 1.825-4.276 2.451-4.276S3.474-3.981 3.474-3.354V-3.096C3.474-2.47 3.078-2.175 2.451-2.175Z'/>
+<path id='start-how-it-works-g1-104' d='M.783 0H1.521V-3.299C1.521-3.907 2.092-4.202 2.682-4.202C3.391-4.202 3.76-3.769 3.76-2.921V0H4.497V-3.05C4.497-4.202 3.88-4.866 2.903-4.866C2.193-4.866 1.788-4.516 1.557-3.981H1.521V-6.819H.783V0Z'/>
+<path id='start-how-it-works-g1-105' d='M1.152-5.87C1.465-5.87 1.603-6.036 1.603-6.285V-6.405C1.603-6.654 1.465-6.819 1.152-6.819S.7-6.654 .7-6.405V-6.285C.7-6.036 .839-5.87 1.152-5.87ZM.783 0H1.521V-4.755H.783V0Z'/>
+<path id='start-how-it-works-g1-107' d='M.783 0H1.521V-1.696L2.23-2.424L3.806 0H4.7L2.765-2.875L4.525-4.755H3.631L2.285-3.308L1.557-2.497H1.521V-6.819H.783V0Z'/>
+<path id='start-how-it-works-g1-108' d='M2.221 0V-.645H1.521V-6.819H.783V-.765C.783-.323 1.06 0 1.567 0H2.221Z'/>
+<path id='start-how-it-works-g1-109' d='M1.521 0V-3.299C1.521-3.907 2.073-4.202 2.654-4.202C3.354-4.202 3.677-3.769 3.677-2.921V0H4.414V-3.299C4.414-3.907 4.949-4.202 5.529-4.202C6.248-4.202 6.571-3.76 6.571-2.921V0H7.308V-3.05C7.308-4.202 6.727-4.866 5.76-4.866C4.949-4.866 4.488-4.414 4.313-3.898H4.294C4.036-4.58 3.465-4.866 2.838-4.866C2.101-4.866 1.769-4.469 1.557-3.981H1.521V-4.755H.783V0H1.521Z'/>
+<path id='start-how-it-works-g1-110' d='M1.521 0V-3.299C1.521-3.907 2.092-4.202 2.682-4.202C3.391-4.202 3.76-3.769 3.76-2.921V0H4.497V-3.05C4.497-4.202 3.88-4.866 2.903-4.866C2.193-4.866 1.788-4.516 1.557-3.981H1.521V-4.755H.783V0H1.521Z'/>
+<path id='start-how-it-works-g1-111' d='M2.58 .111C3.852 .111 4.728-.866 4.728-2.378S3.852-4.866 2.58-4.866S.433-3.889 .433-2.378S1.309 .111 2.58 .111ZM2.58-.544C1.788-.544 1.226-1.032 1.226-2.037V-2.719C1.226-3.723 1.788-4.211 2.58-4.211S3.935-3.723 3.935-2.719V-2.037C3.935-1.032 3.373-.544 2.58-.544Z'/>
+<path id='start-how-it-works-g1-112' d='M.783 1.843H1.521V-.774H1.557C1.843-.184 2.295 .111 2.949 .111C4.138 .111 4.884-.857 4.884-2.378S4.138-4.866 2.949-4.866C2.295-4.866 1.806-4.58 1.557-3.981H1.521V-4.755H.783V1.843ZM2.746-.553C2.073-.553 1.521-.903 1.521-1.521V-3.29C1.521-3.815 2.073-4.202 2.746-4.202C3.576-4.202 4.092-3.631 4.092-2.783V-1.972C4.092-1.124 3.576-.553 2.746-.553Z'/>
+<path id='start-how-it-works-g1-114' d='M1.521 0V-3.225C1.521-3.677 2-4.018 2.792-4.018H3.225V-4.755H2.94C2.166-4.755 1.733-4.331 1.567-3.88H1.521V-4.755H.783V0H1.521Z'/>
+<path id='start-how-it-works-g1-115' d='M2.212 .111C3.299 .111 3.972-.452 3.972-1.373C3.972-2.092 3.566-2.553 2.516-2.709L2.147-2.765C1.557-2.857 1.235-3.041 1.235-3.502C1.235-3.953 1.557-4.239 2.166-4.239S3.179-3.953 3.391-3.659L3.88-4.101C3.493-4.58 2.986-4.866 2.221-4.866C1.253-4.866 .525-4.405 .525-3.465C.525-2.58 1.18-2.221 2.055-2.092L2.433-2.037C3.06-1.944 3.262-1.659 3.262-1.29C3.262-.802 2.894-.516 2.267-.516C1.668-.516 1.226-.783 .857-1.244L.332-.82C.756-.258 1.336 .111 2.212 .111Z'/>
+<path id='start-how-it-works-g1-116' d='M2.755 0V-.645H1.788V-4.11H2.829V-4.755H1.788V-6.073H1.124V-5.188C1.124-4.866 1.023-4.755 .71-4.755H.267V-4.11H1.051V-.783C1.051-.323 1.327 0 1.834 0H2.755Z'/>
+<path id='start-how-it-works-g1-117' d='M3.714 0H4.451V-4.755H3.714V-1.465C3.714-.839 3.142-.553 2.562-.553C1.852-.553 1.474-.986 1.474-1.834V-4.755H.737V-1.705C.737-.553 1.364 .111 2.341 .111C3.133 .111 3.493-.323 3.677-.774H3.714V0Z'/>
+<path id='start-how-it-works-g1-118' d='M2.691 0L4.368-4.755H3.659L2.811-2.396L2.295-.774H2.249L1.733-2.396L.903-4.755H.166L1.834 0H2.691Z'/>
+<path id='start-how-it-works-g1-120' d='M.194 0H1.014L2.35-1.862H2.378L3.612 0H4.479L2.765-2.451L4.442-4.755H3.622L2.368-2.986H2.341L1.133-4.755H.267L1.954-2.396L.194 0Z'/>
+<path id='start-how-it-works-g1-121' d='M2.562-1.521L2.304-.746H2.258L2.037-1.521L.894-4.755H.157L1.935 .184L1.576 1.198H.829V1.843H1.207C1.908 1.843 2.101 1.677 2.313 1.106L4.442-4.755H3.714L2.562-1.521Z'/>
+<use id='start-how-it-works-g3-44' href='#start-how-it-works-g1-44' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-45' href='#start-how-it-works-g1-45' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-67' href='#start-how-it-works-g1-67' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-73' href='#start-how-it-works-g1-73' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-75' href='#start-how-it-works-g1-75' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-77' href='#start-how-it-works-g1-77' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-79' href='#start-how-it-works-g1-79' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-80' href='#start-how-it-works-g1-80' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-84' href='#start-how-it-works-g1-84' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-97' href='#start-how-it-works-g1-97' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-99' href='#start-how-it-works-g1-99' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-100' href='#start-how-it-works-g1-100' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-101' href='#start-how-it-works-g1-101' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-103' href='#start-how-it-works-g1-103' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-104' href='#start-how-it-works-g1-104' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-105' href='#start-how-it-works-g1-105' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-108' href='#start-how-it-works-g1-108' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-109' href='#start-how-it-works-g1-109' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-110' href='#start-how-it-works-g1-110' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-111' href='#start-how-it-works-g1-111' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-112' href='#start-how-it-works-g1-112' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-114' href='#start-how-it-works-g1-114' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-115' href='#start-how-it-works-g1-115' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-116' href='#start-how-it-works-g1-116' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-117' href='#start-how-it-works-g1-117' transform='scale(1.162)'/>
+<use id='start-how-it-works-g3-121' href='#start-how-it-works-g1-121' transform='scale(1.162)'/>
+<use id='start-how-it-works-g5-97' href='#start-how-it-works-g1-97' transform='scale(1.081)'/>
+<use id='start-how-it-works-g5-101' href='#start-how-it-works-g1-101' transform='scale(1.081)'/>
+<use id='start-how-it-works-g5-103' href='#start-how-it-works-g1-103' transform='scale(1.081)'/>
+<use id='start-how-it-works-g5-114' href='#start-how-it-works-g1-114' transform='scale(1.081)'/>
+<use id='start-how-it-works-g5-116' href='#start-how-it-works-g1-116' transform='scale(1.081)'/>
+</defs>
+<g id='start-how-it-works-page1'>
+<g stroke-miterlimit='10' transform='matrix(.996 0 0 -.996 -72 -72)' stroke-width='1.12921' class='fig-f-ink fig-s-ink'>
+<g fill-opacity='0.08' class='fig-s-line fig-f-line'>
+<path d='M7.528-42.157V-221.325C7.528-223.82 9.55-225.842 12.045-225.842H146.045C148.539-225.842 150.562-223.82 150.562-221.325V-42.157C150.562-39.663 148.539-37.64 146.045-37.64H12.045C9.55-37.64 7.528-39.663 7.528-42.157ZM150.562-225.842'/>
+</g>
+<g fill-opacity='0.08' class='fig-s-line fig-f-line'>
+<path d='M180.674-87.326V-153.573C180.674-156.067 182.696-158.09 185.191-158.09H289.078C291.573-158.09 293.595-156.067 293.595-153.573V-87.326C293.595-84.831 291.573-82.809 289.078-82.809H185.191C182.696-82.809 180.674-84.831 180.674-87.326ZM293.595-158.09'/>
+</g>
+<g stroke-dasharray='4.51686,3.01125' stroke-dashoffset='0.0' class='fig-s-line'>
+<path d='M323.707-12.045V-243.91C323.707-246.404 325.73-248.427 328.224-248.427H560.089C562.583-248.427 564.606-246.404 564.606-243.91V-12.045C564.606-9.55 562.583-7.528 560.089-7.528H328.224C325.73-7.528 323.707-9.55 323.707-12.045ZM564.606-248.427' fill='none'/>
+</g>
+<g fill-opacity='0.08' class='fig-s-line fig-f-line'>
+<path d='M334.999-36.135V-108.404C334.999-110.067 336.348-111.416 338.011-111.416H554.066C555.729-111.416 557.078-110.067 557.078-108.404V-36.135C557.078-34.472 555.729-33.124 554.066-33.124H338.011C336.348-33.124 334.999-34.472 334.999-36.135ZM557.078-111.416'/>
+</g>
+<g fill-opacity='0.08' class='fig-s-line fig-f-line'>
+<path d='M334.999-141.528V-234.876C334.999-236.539 336.348-237.887 338.011-237.887H452.437C454.1-237.887 455.449-236.539 455.449-234.876V-141.528C455.449-139.865 454.1-138.517 452.437-138.517H338.011C336.348-138.517 334.999-139.865 334.999-141.528ZM455.449-237.887'/>
+</g>
+<g fill-opacity='0.08' class='fig-s-line fig-f-line'>
+<path d='M466.741-141.528V-234.876C466.741-236.539 468.089-237.887 469.752-237.887H554.066C555.729-237.887 557.078-236.539 557.078-234.876V-141.528C557.078-139.865 555.729-138.517 554.066-138.517H469.752C468.089-138.517 466.741-139.865 466.741-141.528ZM557.078-237.887'/>
+</g>
+<g class='fig-s-line'>
+<path d='M150.562-120.449H171.546' fill='none'/>
+<g transform='translate(171.264 -120.449)' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linejoin='miter' class='fig-f-line'>
+ <path d='M6.642 0L.565 3.175V0V-3.175Z'/>
+ </g>
+</g>
+<g class='fig-s-line'>
+<path d='M293.595-97.865H325.872' fill='none'/>
+<g transform='translate(325.589 -97.865)' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linejoin='miter' class='fig-f-line'>
+ <path d='M6.642 0L.565 3.175V0V-3.175Z'/>
+ </g>
+</g>
+<g class='fig-s-line'>
+<path d='M396.73-111.416V-129.389' fill='none'/>
+<g transform='matrix(0 -1 1 0 396.73 -129.106)' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linejoin='miter' class='fig-f-line'>
+ <path d='M6.642 0L.565 3.175V0V-3.175Z'/>
+ </g>
+</g>
+<g class='fig-s-line'>
+<path d='M511.909-111.416V-129.389' fill='none'/>
+<g transform='matrix(0 -1 1 0 511.909 -129.106)' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linejoin='miter' class='fig-f-line'>
+ <path d='M6.642 0L.565 3.175V0V-3.175Z'/>
+ </g>
+</g>
+<g class='fig-s-line'>
+<path d='M511.909-237.887V-272.516H79.045V-234.97' fill='none'/>
+<g transform='matrix(0 1 -1 0 79.045 -235.252)' stroke-dasharray='none' stroke-dashoffset='0.0' stroke-linejoin='miter' class='fig-f-line'>
+ <path d='M6.642 0L.565 3.175V0V-3.175Z'/>
+ </g>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 405.011 -96.36)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g5-116'/>
+<use x='-68.49' y='-72' href='#start-how-it-works-g5-97'/>
+<use x='-63.15' y='-72' href='#start-how-it-works-g5-114'/>
+<use x='-59.71' y='-72' href='#start-how-it-works-g5-103'/>
+<use x='-54.49' y='-72' href='#start-how-it-works-g5-101'/>
+<use x='-49' y='-72' href='#start-how-it-works-g5-116'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 117.849 -127.978)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g3-79'/>
+<use x='-64.389' y='-72' href='#start-how-it-works-g3-112'/>
+<use x='-58.154' y='-72' href='#start-how-it-works-g3-101'/>
+<use x='-52.252' y='-72' href='#start-how-it-works-g3-114'/>
+<use x='-48.35' y='-72' href='#start-how-it-works-g3-97'/>
+<use x='-42.61' y='-72' href='#start-how-it-works-g3-116'/>
+<use x='-38.879' y='-72' href='#start-how-it-works-g3-111'/>
+<use x='-32.859' y='-72' href='#start-how-it-works-g3-114'/>
+<use x='-26.377' y='-72' href='#start-how-it-works-g3-104'/>
+<use x='-20.271' y='-72' href='#start-how-it-works-g3-111'/>
+<use x='-14.251' y='-72' href='#start-how-it-works-g3-115'/>
+<use x='-9.091' y='-72' href='#start-how-it-works-g3-116'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 280.481 -173.146)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g3-79'/>
+<use x='-64.389' y='-72' href='#start-how-it-works-g3-67'/>
+<use x='-57.713' y='-72' href='#start-how-it-works-g3-73'/>
+<use x='-50.876' y='-72' href='#start-how-it-works-g3-114'/>
+<use x='-46.985' y='-72' href='#start-how-it-works-g3-101'/>
+<use x='-41.083' y='-72' href='#start-how-it-works-g3-103'/>
+<use x='-35.407' y='-72' href='#start-how-it-works-g3-105'/>
+<use x='-32.72' y='-72' href='#start-how-it-works-g3-115'/>
+<use x='-27.56' y='-72' href='#start-how-it-works-g3-116'/>
+<use x='-23.786' y='-72' href='#start-how-it-works-g3-114'/>
+<use x='-19.734' y='-72' href='#start-how-it-works-g3-121'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 276.504 -191.214)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-112'/>
+<use x='-66.635' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='-61.696' y='-72' href='#start-how-it-works-g1-99'/>
+<use x='-57.043' y='-72' href='#start-how-it-works-g1-107'/>
+<use x='-52.214' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='-47.275' y='-72' href='#start-how-it-works-g1-103'/>
+<use x='-42.446' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-37.368' y='-72' href='#start-how-it-works-g1-115'/>
+<use x='-30.68' y='-72' href='#start-how-it-works-g1-40'/>
+<use x='-27.582' y='-72' href='#start-how-it-works-g1-46'/>
+<use x='-25.066' y='-72' href='#start-how-it-works-g1-98'/>
+<use x='-19.701' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-14.622' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-9.544' y='-72' href='#start-how-it-works-g1-41'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 283.222 -203.259)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-115'/>
+<use x='-67.495' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-65.183' y='-72' href='#start-how-it-works-g1-103'/>
+<use x='-60.299' y='-72' href='#start-how-it-works-g1-110'/>
+<use x='-55.045' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-49.967' y='-72' href='#start-how-it-works-g1-100'/>
+<use x='-42.419' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-40.106' y='-72' href='#start-how-it-works-g1-110'/>
+<use x='-34.852' y='-72' href='#start-how-it-works-g1-100'/>
+<use x='-29.487' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-24.52' y='-72' href='#start-how-it-works-g1-120'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 276.616 -215.303)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-68.753' y='-72' href='#start-how-it-works-g1-114'/>
+<use x='-65.405' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-60.327' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-53.065' y='-72' href='#start-how-it-works-g1-112'/>
+<use x='-47.7' y='-72' href='#start-how-it-works-g1-117'/>
+<use x='-42.446' y='-72' href='#start-how-it-works-g1-98'/>
+<use x='-37.081' y='-72' href='#start-how-it-works-g1-108'/>
+<use x='-34.565' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-32.253' y='-72' href='#start-how-it-works-g1-99'/>
+<use x='-27.6' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='-22.661' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-19.414' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-17.101' y='-72' href='#start-how-it-works-g1-111'/>
+<use x='-11.921' y='-72' href='#start-how-it-works-g1-110'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 447.105 -121.955)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g3-115'/>
+<use x='-66.765' y='-72' href='#start-how-it-works-g3-104'/>
+<use x='-60.659' y='-72' href='#start-how-it-works-g3-105'/>
+<use x='-57.971' y='-72' href='#start-how-it-works-g3-114'/>
+<use x='-54.026' y='-72' href='#start-how-it-works-g3-117'/>
+<use x='-47.92' y='-72' href='#start-how-it-works-g3-100'/>
+<use x='-41.685' y='-72' href='#start-how-it-works-g3-111'/>
+<use x='-35.88' y='-72' href='#start-how-it-works-g3-44'/>
+<use x='-30.419' y='-72' href='#start-how-it-works-g3-111'/>
+<use x='-24.399' y='-72' href='#start-how-it-works-g3-110'/>
+<use x='-18.293' y='-72' href='#start-how-it-works-g3-101'/>
+<use x='-12.284' y='-72' href='#start-how-it-works-g3-45'/>
+<use x='-7.995' y='-72' href='#start-how-it-works-g3-115'/>
+<use x='-2.759' y='-72' href='#start-how-it-works-g3-104'/>
+<use x='3.347' y='-72' href='#start-how-it-works-g3-111'/>
+<use x='9.367' y='-72' href='#start-how-it-works-g3-116'/>
+<use x='15.677' y='-72' href='#start-how-it-works-g3-99'/>
+<use x='21.02' y='-72' href='#start-how-it-works-g3-111'/>
+<use x='27.04' y='-72' href='#start-how-it-works-g3-109'/>
+<use x='36.424' y='-72' href='#start-how-it-works-g3-109'/>
+<use x='45.809' y='-72' href='#start-how-it-works-g3-97'/>
+<use x='51.55' y='-72' href='#start-how-it-works-g3-110'/>
+<use x='57.656' y='-72' href='#start-how-it-works-g3-100'/>
+<use x='63.891' y='-72' href='#start-how-it-works-g3-115'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 453.278 -227.348)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g3-75'/>
+<use x='-65.453' y='-72' href='#start-how-it-works-g3-101'/>
+<use x='-59.552' y='-72' href='#start-how-it-works-g3-114'/>
+<use x='-55.606' y='-72' href='#start-how-it-works-g3-110'/>
+<use x='-49.5' y='-72' href='#start-how-it-works-g3-101'/>
+<use x='-43.599' y='-72' href='#start-how-it-works-g3-108'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 573.443 -227.348)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g3-84'/>
+<use x='-65.851' y='-72' href='#start-how-it-works-g3-80'/>
+<use x='-59.337' y='-72' href='#start-how-it-works-g3-77'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 226.908 -186.697)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-112'/>
+<use x='-66.635' y='-72' href='#start-how-it-works-g1-117'/>
+<use x='-61.381' y='-72' href='#start-how-it-works-g1-115'/>
+<use x='-56.876' y='-72' href='#start-how-it-works-g1-104'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 377.606 -164.113)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-112'/>
+<use x='-66.635' y='-72' href='#start-how-it-works-g1-117'/>
+<use x='-61.381' y='-72' href='#start-how-it-works-g1-108'/>
+<use x='-58.911' y='-72' href='#start-how-it-works-g1-108'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 295.989 -338.764)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-66.996' y='-72' href='#start-how-it-works-g1-118'/>
+<use x='-62.445' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-60.132' y='-72' href='#start-how-it-works-g1-100'/>
+<use x='-54.767' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-49.689' y='-72' href='#start-how-it-works-g1-110'/>
+<use x='-44.435' y='-72' href='#start-how-it-works-g1-99'/>
+<use x='-39.838' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-32.577' y='-72' href='#start-how-it-works-g1-102'/>
+<use x='-29.617' y='-72' href='#start-how-it-works-g1-111'/>
+<use x='-24.437' y='-72' href='#start-how-it-works-g1-114'/>
+<use x='-18.859' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-15.612' y='-72' href='#start-how-it-works-g1-104'/>
+<use x='-10.358' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-3.097' y='-72' href='#start-how-it-works-g1-111'/>
+<use x='2.083' y='-72' href='#start-how-it-works-g1-112'/>
+<use x='7.448' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='12.526' y='-72' href='#start-how-it-works-g1-114'/>
+<use x='15.884' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='20.824' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='24.033' y='-72' href='#start-how-it-works-g1-111'/>
+<use x='29.213' y='-72' href='#start-how-it-works-g1-114'/>
+<use x='33.117' y='-72' href='#start-how-it-works-g1-39'/>
+<use x='35.18' y='-72' href='#start-how-it-works-g1-115'/>
+<use x='41.867' y='-72' href='#start-how-it-works-g1-110'/>
+<use x='47.121' y='-72' href='#start-how-it-works-g1-111'/>
+<use x='52.301' y='-72' href='#start-how-it-works-g1-110'/>
+<use x='57.555' y='-72' href='#start-how-it-works-g1-99'/>
+<use x='62.153' y='-72' href='#start-how-it-works-g1-101'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 88.832 -150.562)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-49'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 88.832 -182.18)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-50'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 88.832 -261.978)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-55'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 416.303 -140.023)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-51'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 416.303 -168.629)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-52'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 416.303 -245.416)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-53'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 100.124 -150.562)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-115'/>
+<use x='-67.495' y='-72' href='#start-how-it-works-g1-104'/>
+<use x='-62.241' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-59.929' y='-72' href='#start-how-it-works-g1-114'/>
+<use x='-56.534' y='-72' href='#start-how-it-works-g1-117'/>
+<use x='-51.28' y='-72' href='#start-how-it-works-g1-100'/>
+<use x='-45.915' y='-72' href='#start-how-it-works-g1-111'/>
+<use x='-38.552' y='-72' href='#start-how-it-works-g1-98'/>
+<use x='-33.187' y='-72' href='#start-how-it-works-g1-117'/>
+<use x='-27.933' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-25.621' y='-72' href='#start-how-it-works-g1-108'/>
+<use x='-23.105' y='-72' href='#start-how-it-works-g1-100'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 100.124 -162.607)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-115'/>
+<use x='-67.495' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-65.183' y='-72' href='#start-how-it-works-g1-103'/>
+<use x='-60.299' y='-72' href='#start-how-it-works-g1-110'/>
+<use x='-55.045' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-49.967' y='-72' href='#start-how-it-works-g1-100'/>
+<use x='-42.419' y='-72' href='#start-how-it-works-g1-108'/>
+<use x='-39.903' y='-72' href='#start-how-it-works-g1-111'/>
+<use x='-34.723' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='-29.783' y='-72' href='#start-how-it-works-g1-100'/>
+<use x='-24.418' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-19.34' y='-72' href='#start-how-it-works-g1-114'/>
+<use x='-13.762' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='-8.823' y='-72' href='#start-how-it-works-g1-114'/>
+<use x='-5.391' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-2.144' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='.168' y='-72' href='#start-how-it-works-g1-102'/>
+<use x='3.165' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='8.105' y='-72' href='#start-how-it-works-g1-99'/>
+<use x='12.758' y='-72' href='#start-how-it-works-g1-116'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 100.124 -182.18)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-115'/>
+<use x='-67.495' y='-72' href='#start-how-it-works-g1-104'/>
+<use x='-62.241' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-59.929' y='-72' href='#start-how-it-works-g1-114'/>
+<use x='-56.534' y='-72' href='#start-how-it-works-g1-117'/>
+<use x='-51.28' y='-72' href='#start-how-it-works-g1-100'/>
+<use x='-45.915' y='-72' href='#start-how-it-works-g1-111'/>
+<use x='-38.552' y='-72' href='#start-how-it-works-g1-98'/>
+<use x='-33.187' y='-72' href='#start-how-it-works-g1-112'/>
+<use x='-27.822' y='-72' href='#start-how-it-works-g1-109'/>
+<use x='-17.564' y='-72' href='#start-how-it-works-g1-98'/>
+<use x='-12.199' y='-72' href='#start-how-it-works-g1-117'/>
+<use x='-6.945' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-4.632' y='-72' href='#start-how-it-works-g1-108'/>
+<use x='-2.116' y='-72' href='#start-how-it-works-g1-100'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 100.124 -194.225)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-98'/>
+<use x='-66.635' y='-72' href='#start-how-it-works-g1-112'/>
+<use x='-61.27' y='-72' href='#start-how-it-works-g1-109'/>
+<use x='-51.012' y='-72' href='#start-how-it-works-g1-112'/>
+<use x='-45.647' y='-72' href='#start-how-it-works-g1-117'/>
+<use x='-40.393' y='-72' href='#start-how-it-works-g1-115'/>
+<use x='-35.888' y='-72' href='#start-how-it-works-g1-104'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 100.124 -206.27)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-98'/>
+<use x='-66.635' y='-72' href='#start-how-it-works-g1-112'/>
+<use x='-61.27' y='-72' href='#start-how-it-works-g1-109'/>
+<use x='-51.012' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-47.765' y='-72' href='#start-how-it-works-g1-114'/>
+<use x='-44.417' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-39.338' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-32.077' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='-27.138' y='-72' href='#start-how-it-works-g1-112'/>
+<use x='-21.773' y='-72' href='#start-how-it-works-g1-112'/>
+<use x='-16.408' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-11.329' y='-72' href='#start-how-it-works-g1-110'/>
+<use x='-6.075' y='-72' href='#start-how-it-works-g1-100'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 100.124 -261.978)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-115'/>
+<use x='-67.495' y='-72' href='#start-how-it-works-g1-104'/>
+<use x='-62.241' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-59.929' y='-72' href='#start-how-it-works-g1-114'/>
+<use x='-56.534' y='-72' href='#start-how-it-works-g1-117'/>
+<use x='-51.28' y='-72' href='#start-how-it-works-g1-100'/>
+<use x='-45.915' y='-72' href='#start-how-it-works-g1-111'/>
+<use x='-38.552' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='-33.613' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-30.449' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-27.239' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-22.161' y='-72' href='#start-how-it-works-g1-115'/>
+<use x='-17.721' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-12.291' y='-72' href='#start-how-it-works-g1-118'/>
+<use x='-7.814' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-2.736' y='-72' href='#start-how-it-works-g1-114'/>
+<use x='.659' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='2.971' y='-72' href='#start-how-it-works-g1-102'/>
+<use x='6.061' y='-72' href='#start-how-it-works-g1-121'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 100.124 -274.022)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='-67.061' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-63.897' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-60.687' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-55.609' y='-72' href='#start-how-it-works-g1-115'/>
+<use x='-51.169' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-45.739' y='-72' href='#start-how-it-works-g1-112'/>
+<use x='-40.374' y='-72' href='#start-how-it-works-g1-114'/>
+<use x='-37.026' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-31.948' y='-72' href='#start-how-it-works-g1-100'/>
+<use x='-26.583' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-24.27' y='-72' href='#start-how-it-works-g1-99'/>
+<use x='-19.617' y='-72' href='#start-how-it-works-g1-116'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 427.595 -140.023)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-98'/>
+<use x='-66.635' y='-72' href='#start-how-it-works-g1-112'/>
+<use x='-61.27' y='-72' href='#start-how-it-works-g1-109'/>
+<use x='-51.012' y='-72' href='#start-how-it-works-g1-114'/>
+<use x='-47.663' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-42.585' y='-72' href='#start-how-it-works-g1-112'/>
+<use x='-37.22' y='-72' href='#start-how-it-works-g1-111'/>
+<use x='-29.857' y='-72' href='#start-how-it-works-g1-117'/>
+<use x='-24.603' y='-72' href='#start-how-it-works-g1-112'/>
+<use x='-19.238' y='-72' href='#start-how-it-works-g1-100'/>
+<use x='-13.873' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='-8.934' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-5.724' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-.831' y='-72' href='#start-how-it-works-g1-44'/>
+<use x='3.868' y='-72' href='#start-how-it-works-g1-98'/>
+<use x='9.233' y='-72' href='#start-how-it-works-g1-112'/>
+<use x='14.598' y='-72' href='#start-how-it-works-g1-109'/>
+<use x='24.857' y='-72' href='#start-how-it-works-g1-117'/>
+<use x='30.111' y='-72' href='#start-how-it-works-g1-112'/>
+<use x='35.476' y='-72' href='#start-how-it-works-g1-103'/>
+<use x='40.36' y='-72' href='#start-how-it-works-g1-114'/>
+<use x='43.717' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='48.657' y='-72' href='#start-how-it-works-g1-100'/>
+<use x='54.022' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='58.915' y='-72' href='#start-how-it-works-g1-44'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 427.595 -152.068)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-98'/>
+<use x='-66.635' y='-72' href='#start-how-it-works-g1-112'/>
+<use x='-61.27' y='-72' href='#start-how-it-works-g1-109'/>
+<use x='-51.012' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-47.765' y='-72' href='#start-how-it-works-g1-114'/>
+<use x='-44.417' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-39.338' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-32.077' y='-72' href='#start-how-it-works-g1-115'/>
+<use x='-27.739' y='-72' href='#start-how-it-works-g1-121'/>
+<use x='-23.123' y='-72' href='#start-how-it-works-g1-110'/>
+<use x='-17.869' y='-72' href='#start-how-it-works-g1-99'/>
+<use x='-11.033' y='-72' href='#start-how-it-works-g1-40'/>
+<use x='-7.935' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-4.688' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-2.375' y='-72' href='#start-how-it-works-g1-109'/>
+<use x='5.7' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='10.778' y='-72' href='#start-how-it-works-g1-114'/>
+<use x='14.173' y='-72' href='#start-how-it-works-g1-115'/>
+<use x='18.678' y='-72' href='#start-how-it-works-g1-41'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 427.595 -168.629)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-117'/>
+<use x='-66.746' y='-72' href='#start-how-it-works-g1-112'/>
+<use x='-61.381' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='-56.442' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-53.232' y='-72' href='#start-how-it-works-g1-99'/>
+<use x='-48.579' y='-72' href='#start-how-it-works-g1-104'/>
+<use x='-41.142' y='-72' href='#start-how-it-works-g1-108'/>
+<use x='-38.626' y='-72' href='#start-how-it-works-g1-111'/>
+<use x='-33.446' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='-28.507' y='-72' href='#start-how-it-works-g1-100'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 473.516 -200.247)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-98'/>
+<use x='-66.635' y='-72' href='#start-how-it-works-g1-112'/>
+<use x='-61.326' y='-72' href='#start-how-it-works-g1-102'/>
+<use x='-58.329' y='-72' href='#start-how-it-works-g1-40'/>
+<use x='-55.23' y='-72' href='#start-how-it-works-g1-41'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 588.696 -200.247)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-67.033' y='-72' href='#start-how-it-works-g1-120'/>
+<use x='-62.343' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-59.133' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-54.055' y='-72' href='#start-how-it-works-g1-110'/>
+<use x='-48.801' y='-72' href='#start-how-it-works-g1-100'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 427.595 -245.416)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-115'/>
+<use x='-67.495' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-65.183' y='-72' href='#start-how-it-works-g1-103'/>
+<use x='-60.299' y='-72' href='#start-how-it-works-g1-110'/>
+<use x='-55.045' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='-50.105' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-46.859' y='-72' href='#start-how-it-works-g1-117'/>
+<use x='-41.605' y='-72' href='#start-how-it-works-g1-114'/>
+<use x='-38.256' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-30.995' y='-72' href='#start-how-it-works-g1-99'/>
+<use x='-26.342' y='-72' href='#start-how-it-works-g1-104'/>
+<use x='-21.088' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-16.01' y='-72' href='#start-how-it-works-g1-99'/>
+<use x='-11.357' y='-72' href='#start-how-it-works-g1-107'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 427.595 -257.461)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='-67.061' y='-72' href='#start-how-it-works-g1-103'/>
+<use x='-62.204' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='-57.265' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-54.952' y='-72' href='#start-how-it-works-g1-110'/>
+<use x='-49.698' y='-72' href='#start-how-it-works-g1-115'/>
+<use x='-45.258' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-39.829' y='-72' href='#start-how-it-works-g1-46'/>
+<use x='-37.313' y='-72' href='#start-how-it-works-g1-98'/>
+<use x='-31.948' y='-72' href='#start-how-it-works-g1-112'/>
+<use x='-26.638' y='-72' href='#start-how-it-works-g1-102'/>
+<use x='-21.458' y='-72' href='#start-how-it-works-g1-107'/>
+<use x='-16.741' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-11.709' y='-72' href='#start-how-it-works-g1-121'/>
+<use x='-7.093' y='-72' href='#start-how-it-works-g1-114'/>
+<use x='-3.698' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-1.386' y='-72' href='#start-how-it-works-g1-110'/>
+<use x='3.868' y='-72' href='#start-how-it-works-g1-103'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 427.595 -272.517)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-76'/>
+<use x='-67.366' y='-72' href='#start-how-it-works-g1-83'/>
+<use x='-61.992' y='-72' href='#start-how-it-works-g1-77'/>
+<use x='-52.298' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='-47.358' y='-72' href='#start-how-it-works-g1-100'/>
+<use x='-41.993' y='-72' href='#start-how-it-works-g1-109'/>
+<use x='-33.918' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-31.605' y='-72' href='#start-how-it-works-g1-115'/>
+<use x='-27.156' y='-72' href='#start-how-it-works-g1-115'/>
+<use x='-22.651' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-20.339' y='-72' href='#start-how-it-works-g1-111'/>
+<use x='-15.159' y='-72' href='#start-how-it-works-g1-110'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 427.595 -287.573)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-108'/>
+<use x='-69.484' y='-72' href='#start-how-it-works-g1-111'/>
+<use x='-64.304' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='-59.364' y='-72' href='#start-how-it-works-g1-100'/>
+<use x='-54' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-48.921' y='-72' href='#start-how-it-works-g1-114'/>
+<use x='-43.344' y='-72' href='#start-how-it-works-g1-114'/>
+<use x='-39.949' y='-72' href='#start-how-it-works-g1-117'/>
+<use x='-34.695' y='-72' href='#start-how-it-works-g1-110'/>
+<use x='-29.441' y='-72' href='#start-how-it-works-g1-115'/>
+<use x='-24.982' y='-72' href='#start-how-it-works-g1-44'/>
+<use x='-20.283' y='-72' href='#start-how-it-works-g1-108'/>
+<use x='-17.767' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-15.455' y='-72' href='#start-how-it-works-g1-110'/>
+<use x='-10.201' y='-72' href='#start-how-it-works-g1-107'/>
+<use x='-5.419' y='-72' href='#start-how-it-works-g1-115'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 427.595 -299.618)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='-67.061' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-63.897' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-60.65' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='-55.711' y='-72' href='#start-how-it-works-g1-99'/>
+<use x='-51.058' y='-72' href='#start-how-it-works-g1-104'/>
+<use x='-45.804' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-40.726' y='-72' href='#start-how-it-works-g1-100'/>
+<use x='-33.178' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='-28.238' y='-72' href='#start-how-it-works-g1-110'/>
+<use x='-22.984' y='-72' href='#start-how-it-works-g1-100'/>
+<use x='-15.436' y='-72' href='#start-how-it-works-g1-112'/>
+<use x='-10.071' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-7.759' y='-72' href='#start-how-it-works-g1-110'/>
+<use x='-2.505' y='-72' href='#start-how-it-works-g1-110'/>
+<use x='2.749' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='7.827' y='-72' href='#start-how-it-works-g1-100'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 581.394 -246.921)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-54'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 547.574 -258.966)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-114'/>
+<use x='-68.652' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-63.573' y='-72' href='#start-how-it-works-g1-103'/>
+<use x='-58.689' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-56.377' y='-72' href='#start-how-it-works-g1-115'/>
+<use x='-51.937' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-48.727' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-43.649' y='-72' href='#start-how-it-works-g1-114'/>
+<use x='-38.071' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-33.104' y='-72' href='#start-how-it-works-g1-120'/>
+<use x='-28.414' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-25.204' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-20.126' y='-72' href='#start-how-it-works-g1-110'/>
+<use x='-14.872' y='-72' href='#start-how-it-works-g1-100'/>
+<use x='-9.507' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-4.429' y='-72' href='#start-how-it-works-g1-100'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 553.284 -280.045)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='-67.061' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-63.897' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-60.687' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-55.609' y='-72' href='#start-how-it-works-g1-115'/>
+<use x='-51.169' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-47.922' y='-72' href='#start-how-it-works-g1-97'/>
+<use x='-42.983' y='-72' href='#start-how-it-works-g1-116'/>
+<use x='-39.736' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-37.424' y='-72' href='#start-how-it-works-g1-111'/>
+<use x='-32.244' y='-72' href='#start-how-it-works-g1-110'/>
+<use x='-24.807' y='-72' href='#start-how-it-works-g1-107'/>
+<use x='-20.089' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-15.057' y='-72' href='#start-how-it-works-g1-121'/>
+</g>
+<g stroke='none' transform='matrix(1.004 0 0 -1.004 553.623 -292.09)' class='fig-f-muted'>
+<use x='-72' y='-72' href='#start-how-it-works-g1-115'/>
+<use x='-67.495' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-65.183' y='-72' href='#start-how-it-works-g1-103'/>
+<use x='-60.299' y='-72' href='#start-how-it-works-g1-110'/>
+<use x='-55.045' y='-72' href='#start-how-it-works-g1-115'/>
+<use x='-48.357' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-43.353' y='-72' href='#start-how-it-works-g1-118'/>
+<use x='-38.802' y='-72' href='#start-how-it-works-g1-105'/>
+<use x='-36.489' y='-72' href='#start-how-it-works-g1-100'/>
+<use x='-31.124' y='-72' href='#start-how-it-works-g1-101'/>
+<use x='-26.046' y='-72' href='#start-how-it-works-g1-110'/>
+<use x='-20.792' y='-72' href='#start-how-it-works-g1-99'/>
+<use x='-16.195' y='-72' href='#start-how-it-works-g1-101'/>
+</g>
+</g>
+</g>
+</svg>
